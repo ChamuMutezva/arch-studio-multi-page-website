@@ -1,3 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+body {
+  font-family: 'Spartan', sans-serif;
+}
 
+.navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
+  margin-left: 32px;
+  width: 311px;
+}
+
+.hero {
+  background-image: url("/assets/home/mobile/image-hero-paramour.jpg");
+  background-repeat: no-repeat;
+}
+
+main {
+  position: relative;
+}
+
+.aboutus {
+  position: absolute;
+}
 /*# sourceMappingURL=style.css.map */
