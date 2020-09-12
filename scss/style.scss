@@ -5,6 +5,7 @@
 }
 body {
     font-family: 'Spartan', sans-serif;
+    color: white;
 }
 .navMenu {
     display: flex;
@@ -12,15 +13,72 @@ body {
     justify-content: space-between;
     margin-top: 32px;
     margin-left: 32px;
+    margin-bottom: 32px;
     width: 311px;    
 }
 .hero {
+    padding-right: 32px; 
+    padding-left: 32px;
+    padding-top: 106px;
     background-image: url("/assets/home/mobile/image-hero-paramour.jpg");
     background-repeat: no-repeat;
+    background-size: cover; 
+    padding-bottom: 100px;  
+    position: relative;
   }
+  .modal {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #d4d5c6;
+    padding-top: 50px;
+    padding-bottom: 50px;   
+}
   main {
       position: relative;
   }
   .aboutus {
     position: absolute;
+}
+h1 {
+    /* word-break: break-word; 
+    width: 60%; */
+    padding-bottom: 5px;
+    font-size: 3rem;
+}
+
+.hero p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.6rem;
+}
+.portfolio {
+    background: black;
+    width: 252px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.portfolio img {
+    filter: invert(1);
+}
+ul {
+    list-style: none;
+    padding: 20px;
+    color: black;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+li {
+    padding-bottom: 30px;
+}
+.menuCtrl {
+    position: relative;
+}
+.closemenu {
+    position: absolute;   
+    left: 0;
+}
+.hide {
+   visibility: hidden;
 }
