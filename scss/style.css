@@ -30,7 +30,7 @@ body {
   padding-right: 32px;
   padding-left: 32px;
   padding-top: 106px;
-  background-image: url("/assets/home/mobile/image-hero-paramour.jpg");
+  background-image: url("../assets/home/mobile/image-hero-paramour.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 100px;
