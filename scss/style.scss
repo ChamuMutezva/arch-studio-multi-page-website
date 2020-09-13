@@ -82,3 +82,81 @@ li {
 .hide {
    visibility: hidden;
 }
+.navMenu svg:first-child {
+    transform: scale(0.8);
+}
+
+/* Welcome section */
+.welcome {   
+    color: black;   
+}
+.welcomeContainer {
+    width: 311px;
+    margin: 72px auto;
+    padding-top: 72px;
+    position: relative;
+}
+.welcomeContainer::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 65px;
+    height: 1px;
+    background: #1a1818;
+}
+h2 {
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+.welcomeSecondary {
+    padding-top: 20px;
+}
+.welcomeSecondary p {    
+    margin-bottom: 30px;
+}
+.aboutTeams {
+    background: url("../assets/home/mobile/image-small-team.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 180px;
+}
+.aboutTeamsContainer {    
+    width: 311px;
+    margin: auto;
+}
+.aboutTeamsContainer h3 {
+    padding-top: 180px;
+    font-size: 2.3rem;   
+}
+.aboutTeamsContainer .portfolio{
+    margin-top: 20px;
+   width: 200px;
+}
+.delsol {
+    background-image: url("../assets/portfolio/mobile/image-del-sol.jpg");
+}
+.tower {
+background-image: url("../assets/portfolio/mobile/image-228b.jpg");
+}
+.prototype {
+    background-image: url("../assets/portfolio/mobile/image-prototype.jpg");
+
+}
+.featured h4 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.featureContainer {
+    width: 311px;
+    margin: auto;
+    padding-top: 50px;
+}
+.featImg {
+    padding-top: 159px;
+    padding-bottom: 32px;
+    margin-bottom: 20px;
+    padding-left: 32px;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
