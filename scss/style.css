@@ -201,4 +201,13 @@ h2 {
   font-size: 1.3rem;
   font-weight: 900;
 }
+
+.featureContainer .portfolio {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
 /*# sourceMappingURL=style.css.map */

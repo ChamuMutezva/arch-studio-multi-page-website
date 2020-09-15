@@ -160,3 +160,8 @@ background-image: url("../assets/portfolio/mobile/image-228b.jpg");
     font-size: 1.3rem;
     font-weight: 900;
 }
+.featureContainer .portfolio {
+    width: 100%;
+    justify-content: center;
+    column-gap: 20px;
+}
