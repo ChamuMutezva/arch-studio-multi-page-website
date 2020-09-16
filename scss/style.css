@@ -210,4 +210,51 @@ h2 {
   -webkit-column-gap: 20px;
           column-gap: 20px;
 }
+
+footer {
+  width: 100%;
+  position: relative;
+}
+
+.portfolioFooter {
+  background-color: #c8ccd8;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 70px;
+}
+
+.footerContainer {
+  position: relative;
+}
+
+.footerLogo {
+  position: relative;
+  bottom: -60px;
+  background-color: black;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+.footerLogo svg path {
+  fill: white;
+}
+
+.portfolioContainer {
+  background-color: #c8ccd8;
+}
 /*# sourceMappingURL=style.css.map */
