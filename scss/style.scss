@@ -14,7 +14,7 @@ body {
     margin-top: 32px;
     margin-left: 32px;
     margin-bottom: 32px;
-    width: 311px;    
+    width: 78% /*311px; for mobile viewport 375px */   
 }
 .hero {
     padding-right: 32px; 
@@ -58,6 +58,7 @@ h1 {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    margin: auto;
 }
 .portfolio img {
     filter: invert(1);
@@ -197,4 +198,5 @@ footer {
 }
 .portfolioContainer {
     background-color: rgb(200, 204, 216);
+    padding: 40px 0;
 }

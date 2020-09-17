@@ -23,7 +23,7 @@ body {
   margin-top: 32px;
   margin-left: 32px;
   margin-bottom: 32px;
-  width: 311px;
+  width: 78%;
 }
 
 .hero {
@@ -76,6 +76,7 @@ h1 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: auto;
 }
 
 .portfolio img {
@@ -256,5 +257,6 @@ footer {
 
 .portfolioContainer {
   background-color: #c8ccd8;
+  padding: 40px 0;
 }
 /*# sourceMappingURL=style.css.map */
