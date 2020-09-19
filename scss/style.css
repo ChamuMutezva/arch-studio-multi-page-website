@@ -38,12 +38,15 @@ body {
 }
 
 .modal {
-  width: 100%;
+  width: 89%;
   position: absolute;
-  top: 0;
+  top: 104px;
   background: #d4d5c6;
   padding-top: 50px;
   padding-bottom: 50px;
+  z-index: 1;
+  margin-right: 0;
+  right: 0;
 }
 
 main {
@@ -110,8 +113,8 @@ li {
 }
 
 .navMenu svg:first-child {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
 }
 
 /* Welcome section */
@@ -258,5 +261,43 @@ footer {
 .portfolioContainer {
   background-color: #c8ccd8;
   padding: 40px 0;
+}
+
+/*Tablet section */
+@media only screen and (min-width: 720px) {
+  .hero {
+    width: 578px;
+    margin: auto;
+    background-image: url(../assets/home/tablet/image-hero-paramour.jpg);
+  }
+  .modal {
+    width: 80%;
+    top: 0;
+    visibility: visible;
+    padding-top: 25px;
+    padding-bottom: 13px;
+    background: inherit;
+  }
+  .modal ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .modal li {
+    padding-bottom: 0;
+  }
+  .menuCtrl {
+    visibility: hidden;
+  }
+  nav {
+    width: 80%;
+    margin: auto;
+  }
+  .navMenu {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
