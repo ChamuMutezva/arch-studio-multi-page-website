@@ -61,13 +61,14 @@ h1 {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: auto;
 }
 .portfolio img {
     filter: invert(1);
 }
 ul {
-    width: 70%;
+    width: 100px;
     list-style: none;
     padding: 10px;
     margin: auto;
@@ -77,7 +78,9 @@ ul {
 }
 li {
     padding-bottom: 30px;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
 }
 .menuCtrl {
     position: relative;
@@ -181,21 +184,25 @@ background-repeat: no-repeat;
 
 footer {    
     width: 100%;   
-    position: relative;   
-}
-.portfolioFooter  {
-    background-color: rgb(200, 204, 216);
-    padding: 20px;    
-    display: flex;   
-    justify-content: space-around;
-    padding-top: 70px;
+    position: relative;  
+    padding-top: 100px; 
 }
 .footerContainer {
-    position: relative;
+    background: #EEEFF4;
+    padding-bottom: 50px;
+    // position: relative;
 }
+.portfolioFooter  {
+   text-align: center;   
+    padding: 20px;    
+    display: flex;   
+    justify-content: space-around;   
+    flex-direction: column;
+}
+
 .footerLogo {
     position: relative;
-    bottom: -60px;
+    top: -60px;
     background-color: black;
     width: 120px;
     height: 120px;
@@ -209,8 +216,8 @@ footer {
     fill: white;
 }
 .portfolioContainer {
-    background-color: rgb(200, 204, 216);
-    padding: 40px 0;
+    /* background-color: rgb(200, 204, 216);
+    padding: 40px 0; */
 }
 
 /*Tablet section */
@@ -299,5 +306,57 @@ header::after {
     right: 0;   
 }
 
+.featImg::after {
+    position: absolute;   
+    right: 0;
+    top: 14%;
+    font-size: 13rem;
+}
+.tower , .prototype {
+    position: relative;
+}
+
+.delsol::after {   
+    content: "1";    
+}
+.tower::after {
+    content: "2";
+}
+.prototype::after{
+    content: "3";
+}
+.footerContainer {   
+    display: flex;
+    width: 90%;
+    padding-bottom: 0;
+}
+.footerLogo {
+   top: 0;
+   margin: 0;
+}
+.mainFooter {
+    display: flex;
+    width: 100%;
+}
+.portfolioFooter {
+    width: 82%;
+    padding: 0;
+}
+.portfolioFooter ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin-left: 0;
+}
+.portfolioFooter li {
+    padding-top: 42px;   
+}
+.portBottom {
+    padding: 24px;
+    position: absolute;
+    right: 0%;
+    top: 60%; 
+}
 
 }
