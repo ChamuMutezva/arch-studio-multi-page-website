@@ -141,12 +141,18 @@ h2 {
 }
 .delsol {
     background-image: url("../assets/portfolio/mobile/image-del-sol.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .tower {
 background-image: url("../assets/portfolio/mobile/image-228b.jpg");
+background-repeat: no-repeat;
+    background-size: cover;
 }
 .prototype {
     background-image: url("../assets/portfolio/mobile/image-prototype.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .featured h4 {
@@ -279,6 +285,18 @@ header::after {
 .aboutTeams {
     width: 573px;
     margin: auto;
+}
+
+.featureContainer {
+    position: relative;
+    width: 573px;   
+}
+
+.featureContainer .portfolio {
+    position: absolute;
+    width: 32%;
+    top: 25px;
+    right: 0;   
 }
 
 
