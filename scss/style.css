@@ -38,12 +38,12 @@ body {
 }
 
 .modal {
-  width: 89%;
+  width: 86%;
   position: absolute;
   top: 104px;
   background: #d4d5c6;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   z-index: 1;
   margin-right: 0;
   right: 0;
@@ -71,7 +71,7 @@ h1 {
 }
 
 .portfolio {
-  background: black;
+  background: #1b1d23;
   width: 252px;
   padding: 20px;
   display: -webkit-box;
@@ -88,8 +88,10 @@ h1 {
 }
 
 ul {
+  width: 70%;
   list-style: none;
-  padding: 20px;
+  padding: 10px;
+  margin: auto;
   color: black;
   font-weight: 900;
   font-size: 1.4rem;
@@ -97,6 +99,7 @@ ul {
 
 li {
   padding-bottom: 30px;
+  font-size: 18px;
 }
 
 .menuCtrl {
@@ -266,7 +269,7 @@ footer {
 /*Tablet section */
 @media only screen and (min-width: 720px) {
   .hero {
-    width: 578px;
+    width: 573px;
     margin: auto;
     background-image: url(../assets/home/tablet/image-hero-paramour.jpg);
   }
@@ -274,8 +277,8 @@ footer {
     width: 80%;
     top: 0;
     visibility: visible;
-    padding-top: 25px;
-    padding-bottom: 13px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     background: inherit;
   }
   .modal ul {
@@ -285,6 +288,8 @@ footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    width: 58%;
+    margin: auto 60px;
   }
   .modal li {
     padding-bottom: 0;
@@ -293,11 +298,47 @@ footer {
     visibility: hidden;
   }
   nav {
-    width: 80%;
+    width: 59%;
     margin: auto;
   }
   .navMenu {
-    margin-left: 0;
+    margin-left: -45px;
+  }
+  h1 {
+    padding-right: 50px;
+  }
+  header::before {
+    position: absolute;
+    content: "";
+    width: 65px;
+    height: 1px;
+    background-color: black;
+    top: 31px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    left: 29px;
+  }
+  header::after {
+    position: absolute;
+    content: "home";
+    color: black;
+    top: 117px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    left: 40px;
+  }
+  .welcomeContainer::before {
+    content: "Welcome";
+    top: 0;
+    width: 65px;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #c8ccd8;
+    background: transparent;
+  }
+  .aboutTeams {
+    width: 573px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
