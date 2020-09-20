@@ -85,6 +85,14 @@ h1 {
   margin: auto;
 }
 
+.portfolio:hover {
+  background: #60636d;
+}
+
+.portfolio:active {
+  background: #c8ccd8;
+}
+
 .portfolio img {
   -webkit-filter: invert(1);
           filter: invert(1);

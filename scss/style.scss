@@ -64,6 +64,12 @@ h1 {
     align-items: center;
     margin: auto;
 }
+.portfolio:hover {
+    background: rgb(96, 99, 109);
+}
+.portfolio:active {
+    background: rgb(200, 204, 216) ;
+}
 .portfolio img {
     filter: invert(1);
 }
