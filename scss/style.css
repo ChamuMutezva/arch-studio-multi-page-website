@@ -113,6 +113,7 @@ li {
   font-size: 15px;
   font-weight: 700;
   line-height: 25px;
+  color: #7D828F;
 }
 
 .menuCtrl {
@@ -165,6 +166,13 @@ h2 {
 
 .welcomeSecondary p {
   margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.welcomeImg {
+  display: none;
 }
 
 .aboutTeams {
@@ -285,9 +293,8 @@ footer {
   fill: white;
 }
 
-.portfolioContainer {
-  /* background-color: rgb(200, 204, 216);
-    padding: 40px 0; */
+.numSection {
+  display: none;
 }
 
 /*Tablet section */
@@ -331,6 +338,9 @@ footer {
   h1 {
     padding-right: 50px;
   }
+  h2 {
+    width: 50%;
+  }
   header::before {
     position: absolute;
     content: "";
@@ -351,6 +361,9 @@ footer {
             transform: rotate(90deg);
     left: 40px;
   }
+  .welcomeContainer {
+    width: 573px;
+  }
   .welcomeContainer::before {
     content: "Welcome";
     top: 0;
@@ -363,6 +376,7 @@ footer {
   .aboutTeams {
     width: 573px;
     margin: auto;
+    background: url("../assets/home/tablet/image-small-team.jpg");
   }
   .featureContainer {
     position: relative;
@@ -432,6 +446,91 @@ footer {
     position: absolute;
     right: 0%;
     top: 60%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    position: relative;
+    width: 1210px;
+    background-image: url(../assets/home/desktop/image-hero-paramour.jpg);
+  }
+  nav {
+    margin-left: 260px;
+  }
+  .modal ul {
+    width: 40%;
+    margin: auto 0px;
+  }
+  h1 {
+    width: 90%;
+  }
+  .hero p {
+    width: 45%;
+  }
+  .heroSecondary {
+    padding-top: 127px;
+    padding-bottom: 126px;
+  }
+  .heroSecondary .portfolio {
+    margin-left: 0px;
+  }
+  .welcomeImg {
+    display: block;
+    margin-top: 130px;
+  }
+  .welcome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1210px;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .welcomeContainer {
+    margin: 30px auto;
+    padding-top: 210px;
+  }
+  .welcomeSecondary p {
+    margin-right: 121px;
+  }
+  .welcomeContainer::before {
+    font-size: 13rem;
+    margin-left: -140px;
+  }
+  .numSection {
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: -70px;
+    background: white;
+    color: black;
+  }
+  .firstSection {
+    background: black;
+    color: white;
+  }
+  .nums {
+    padding: 25px;
+    text-align: center;
+  }
+  header::before {
+    left: 40px;
+  }
+  header::after {
+    left: 44px;
+  }
+  .navMenu {
+    margin-left: -86px;
+  }
+  .aboutTeams {
+    width: 1210px;
+    background: url("../assets/home/desktop/image-small-team.jpg");
+  }
+  .featureContainer {
+    width: 1210px;
   }
 }
 /*# sourceMappingURL=style.css.map */
