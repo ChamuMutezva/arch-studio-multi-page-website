@@ -333,6 +333,15 @@ header::after {
 .tower , .prototype {
     position: relative;
 }
+.delsol {
+    background-image: url("../assets/portfolio/tablet/image-del-sol.jpg");   
+}
+.tower {
+background-image: url("../assets/portfolio/tablet/image-228b.jpg");
+}
+.prototype {
+    background-image: url("../assets/portfolio/tablet/image-prototype.jpg");  
+}
 
 .delsol::after {   
     content: "1";    
@@ -383,7 +392,7 @@ header::after {
 @media only screen and (min-width: 1280px) {    
     .hero {
         position: relative;
-        width: 1210px;       
+        width: 1110px;       
         background-image: url(../assets/home/desktop/image-hero-paramour.jpg);
     }  
 nav {   
@@ -412,7 +421,7 @@ h1 {
 }
 .welcome {  
     display: flex;
-    width: 1210px;
+    width: 1110px;
     margin: auto;
     padding-top: 50px;
 }
@@ -453,11 +462,52 @@ header::after {
     margin-left: -86px;
 }
 .aboutTeams {
-    width: 1210px;
+    width: 1110px;
     background: url("../assets/home/desktop/image-small-team.jpg");
 }
 .featureContainer {    
-    width: 1210px;
+    width: 1110px;
 }
+.featureImageContainer {
+    display: flex;    
+    justify-content: space-between;
+}
+.featImg {
+    width: 350px;
+    padding-bottom: 131px;
+}
+.delsol::after {    
+    left: 235px;
+}
+.featImg::after {
+    position: relative;
+    right: -205px;
+    top: -200px;
+    font-size: 9rem;
+}
+.featImg h5, .featImg p {
+    position: relative;
+    top: 160px;
+}
+.delsol {
+    background-image: url("../assets/portfolio/desktop/image-del-sol.jpg"); 
+    background-size: contain;  
+}
+.tower {
+background-image: url("../assets/portfolio/desktop/image-228b.jpg");
+background-size: contain;
+}
+.prototype {
+    background-image: url("../assets/portfolio/desktop/image-prototype.jpg");  
+    background-size: contain;
+}
+.footerContainer {
+    width: 1110px;
+    margin: auto;
+}
+.portBottom {   
+    right: 5%;   
+}
+
 
 }
