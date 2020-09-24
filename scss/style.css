@@ -456,6 +456,22 @@ footer {
     right: 0%;
     top: 60%;
   }
+  .nums:hover {
+    background: grey;
+  }
+  .nums:active {
+    background-color: #1b1d23;
+  }
+  li:hover {
+    color: #1b1d23;
+    cursor: pointer;
+  }
+  label {
+    -webkit-user-select: select none;
+       -moz-user-select: select none;
+        -ms-user-select: select none;
+            user-select: select none;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -477,11 +493,11 @@ footer {
   .hero p {
     width: 45%;
   }
-  .heroSecondary {
+  .heroSlide1 {
     padding-top: 127px;
     padding-bottom: 126px;
   }
-  .heroSecondary .portfolio {
+  .heroSlide1 .portfolio {
     margin-left: 0px;
   }
   .welcomeImg {
@@ -518,12 +534,16 @@ footer {
     color: black;
   }
   .firstSection {
-    background: black;
+    background: #1b1d23;
     color: white;
   }
   .nums {
     padding: 25px;
     text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   header::before {
     left: 40px;
@@ -564,7 +584,12 @@ footer {
   }
   .featImg h5, .featImg p {
     position: relative;
-    top: 160px;
+    top: 272px;
+  }
+  .featImg p {
+    font-weight: 100;
+    font-size: 1rem;
+    margin-top: 10px;
   }
   .delsol {
     background-image: url("../assets/portfolio/desktop/image-del-sol.jpg");
@@ -578,6 +603,10 @@ footer {
     background-image: url("../assets/portfolio/desktop/image-prototype.jpg");
     background-size: 100% 100%;
   }
+  .footerLogo {
+    width: 260px;
+    height: 200px;
+  }
   .footerContainer {
     width: 1110px;
     margin: auto;
@@ -589,12 +618,15 @@ footer {
     width: 126px;
     background-color: white;
     right: 0;
-    height: 120px;
+    height: 200px;
   }
   .portBottom {
     position: relative;
     right: 0%;
     z-index: 1;
+  }
+  .portfolio {
+    width: 327px;
   }
 }
 /*# sourceMappingURL=style.css.map */
