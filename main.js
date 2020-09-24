@@ -2,6 +2,7 @@ const hamburger = document.querySelector(".hamburger");
 const closemenu = document.querySelector(".closemenu");
 const modal = document.querySelector(".modal");
 const numSection = document.querySelector(".numSection");
+const mediaQuery = window.matchMedia("(max-width: 1279px)");
 console.log(numSection);
 
 closemenu.addEventListener("click", () => {
@@ -19,7 +20,12 @@ hamburger.addEventListener("click", () => {
 numSection.addEventListener("click", (event) => {
     const hero = document.querySelector(".hero")
     const slideNum = parseInt(event.target.innerText)
+    const numSectionSlide = Array.from(document.querySelectorAll(".nums"))
+    numSectionSlide.forEach(element => element.classList.remove("activeSection"))
+    event.target.classList.add("activeSection")
+    console.log(numSectionSlide)
    console.log(slideNum)
+   console.log(event.target)
     slideTemplate(slideNum);
 })
 console.log(hamburger)
@@ -28,7 +34,7 @@ const slideTemplate = (slide) => {
     const slideBackgroundImg = document.querySelector(".hero")
     const slideTitle = document.querySelector(".slideTitle");
     const slideBody = document.querySelector(".slideBody");
-    const mediaQuery = window.matchMedia("(min-width: 720px)")
+   
    // console.log(mediaQuery)
     slideTitle.innerText = slidesView[slide - 1].slidetitle;
     slideBody.innerText = slidesView[slide - 1].slidebody;
@@ -84,6 +90,18 @@ const slidesView = [
         }
     }
 ]
+
+// for screens up to 1279px use default template
+if (mediaQuery) {
+    const slideBackgroundImg = document.querySelector(".hero")
+    const slideTitle = document.querySelector(".slideTitle");
+    const slideBody = document.querySelector(".slideBody");   
+  
+    slideTitle.innerText = slidesView[0].slidetitle;
+    slideBody.innerText = slidesView[0].slidebody;
+    slideBackgroundImg.style.backgroundImage = slidesView[0].slideImg.desktop;
+
+}
 
 
 
