@@ -568,22 +568,33 @@ footer {
   }
   .delsol {
     background-image: url("../assets/portfolio/desktop/image-del-sol.jpg");
-    background-size: contain;
+    background-size: 100% 100%;
   }
   .tower {
     background-image: url("../assets/portfolio/desktop/image-228b.jpg");
-    background-size: contain;
+    background-size: 100% 100%;
   }
   .prototype {
     background-image: url("../assets/portfolio/desktop/image-prototype.jpg");
-    background-size: contain;
+    background-size: 100% 100%;
   }
   .footerContainer {
     width: 1110px;
     margin: auto;
+    position: relative;
+  }
+  .footerContainer::after {
+    position: absolute;
+    content: "";
+    width: 126px;
+    background-color: white;
+    right: 0;
+    height: 120px;
   }
   .portBottom {
-    right: 5%;
+    position: relative;
+    right: 0%;
+    z-index: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
