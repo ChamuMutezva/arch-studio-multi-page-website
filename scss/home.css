@@ -101,6 +101,10 @@ li {
   font-size: 15px;
   font-weight: 700;
   line-height: 25px;
+}
+
+a {
+  text-decoration: none;
   color: #7D828F;
 }
 
@@ -285,6 +289,11 @@ footer {
   display: none;
 }
 
+li:hover {
+  color: #1b1d23;
+  cursor: pointer;
+}
+
 /*Tablet section */
 @media only screen and (min-width: 720px) {
   .hero {
@@ -449,10 +458,6 @@ footer {
   }
   .nums:active {
     background-color: #1b1d23;
-  }
-  li:hover {
-    color: #1b1d23;
-    cursor: pointer;
   }
   label {
     -webkit-user-select: select none;

@@ -77,9 +77,11 @@ li {
     padding-bottom: 30px;
     font-size: 15px;
     font-weight: 700;
-    line-height: 25px;
-    color: #7D828F;
-   
+    line-height: 25px;   
+}
+a{
+    text-decoration: none;
+    color: #7D828F;   
 }
 .menuCtrl {
     position: relative;
@@ -222,6 +224,12 @@ footer {
 }
 .numSection {
     display: none;
+}
+
+//active states
+li:hover {
+    color: #1b1d23;
+    cursor: pointer;    
 }
 
 /*Tablet section */
@@ -383,10 +391,7 @@ background-image: url("../assets/portfolio/tablet/image-228b.jpg");
 .nums:active {
     background-color: #1b1d23;
 }
-li:hover {
-    color: #1b1d23;
-    cursor: pointer;    
-}
+
 label {
     user-select: select none; 
 }
