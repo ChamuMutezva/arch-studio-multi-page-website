@@ -2,12 +2,12 @@ figure {
     position: relative;
 }
 figcaption {
-    position: absolute;
-    top: 162px;
+    position: relative;
+    top: -80px;
     left: 80px;
 }
 figcaption h2 {
-    font-size: 1rem;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -16,6 +16,7 @@ figcaption h2 {
     margin: auto;
     display: block;
     width: 78%;
+    height: auto;
 }
 span.dated {
     font-weight: 100;
@@ -23,7 +24,8 @@ span.dated {
 .portfolioImageContainer {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
+    margin-top: 65px;
 }
 
 /*Tablet section */
