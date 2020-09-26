@@ -1,0 +1,56 @@
+figure {
+    position: relative;
+}
+figcaption {
+    position: absolute;
+    top: 162px;
+    left: 80px;
+}
+figcaption h2 {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.portfolioImg img {
+    margin: auto;
+    display: block;
+    width: 78%;
+}
+span.dated {
+    font-weight: 100;
+}
+.portfolioImageContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/*Tablet section */
+@media only screen and (min-width: 720px) {
+    header::after {
+      //  position: absolute;
+        content: "portfolio";
+      //  color: black;
+      //  top: 117px;
+      //  -webkit-transform: rotate(90deg);
+      //  transform: rotate(90deg);
+      //  left: 40px;
+    }
+
+}
+
+//Desktop section
+@media only screen and (min-width: 1280px) {
+    .portfolioImageContainer {       
+        flex-direction: row;
+        flex-wrap: wrap;       
+        justify-content: center;
+    }
+    figure.portfolioImg {
+        width: 30vw;
+    }
+    header::after {
+        left: 30px;
+    }
+}

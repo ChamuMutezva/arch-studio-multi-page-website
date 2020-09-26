@@ -17,31 +17,33 @@ hamburger.addEventListener("click", () => {
     modal.classList.remove("hide");
 })
 
-numSection.addEventListener("click", (event) => {
-    const hero = document.querySelector(".hero")
-    const slideNum = parseInt(event.target.innerText)
-    const numSectionSlide = Array.from(document.querySelectorAll(".nums"))
-    numSectionSlide.forEach(element => element.classList.remove("activeSection"))
-    event.target.classList.add("activeSection")
-    console.log(numSectionSlide)
-   console.log(slideNum)
-   console.log(event.target)
-    slideTemplate(slideNum);
-})
+if (numSection) {
+    numSection.addEventListener("click", (event) => {
+        const hero = document.querySelector(".hero")
+        const slideNum = parseInt(event.target.innerText)
+        const numSectionSlide = Array.from(document.querySelectorAll(".nums"))
+        numSectionSlide.forEach(element => element.classList.remove("activeSection"))
+        event.target.classList.add("activeSection")
+        console.log(numSectionSlide)
+        console.log(slideNum)
+        console.log(event.target)
+        slideTemplate(slideNum);
+    })
+}
 console.log(hamburger)
 
 const slideTemplate = (slide) => {
     const slideBackgroundImg = document.querySelector(".hero")
     const slideTitle = document.querySelector(".slideTitle");
     const slideBody = document.querySelector(".slideBody");
-   
-   // console.log(mediaQuery)
+
+    // console.log(mediaQuery)
     slideTitle.innerText = slidesView[slide - 1].slidetitle;
     slideBody.innerText = slidesView[slide - 1].slidebody;
     slideBackgroundImg.style.backgroundImage = slidesView[slide - 1].slideImg.desktop;
-   // slideBackgroundImg.style.backgroundImage = 'url"slidesView[1].slideImg.desktop"' ;
-   // console.log = slidesView[slide - 1].slideImg.desktop;
-   // slideBackgroundImg.style.backgroundImage = 'url("./assets/home/mobile/image-hero-seraph.jpg")'
+    // slideBackgroundImg.style.backgroundImage = 'url"slidesView[1].slideImg.desktop"' ;
+    // console.log = slidesView[slide - 1].slideImg.desktop;
+    // slideBackgroundImg.style.backgroundImage = 'url("./assets/home/mobile/image-hero-seraph.jpg")'
 
 }
 
@@ -91,17 +93,17 @@ const slidesView = [
     }
 ]
 
-// for screens up to 1279px use default template
+/* for screens up to 1279px use default template
 if (mediaQuery) {
     const slideBackgroundImg = document.querySelector(".hero")
     const slideTitle = document.querySelector(".slideTitle");
-    const slideBody = document.querySelector(".slideBody");   
-  
+    const slideBody = document.querySelector(".slideBody");
+
     slideTitle.innerText = slidesView[0].slidetitle;
     slideBody.innerText = slidesView[0].slidebody;
     slideBackgroundImg.style.backgroundImage = slidesView[0].slideImg.desktop;
 
-}
+} */
 
 
 
