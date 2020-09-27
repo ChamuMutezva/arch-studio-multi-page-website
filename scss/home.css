@@ -122,8 +122,8 @@ a {
 }
 
 .navMenu svg:first-child {
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 /* Welcome section */

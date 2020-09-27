@@ -30,7 +30,13 @@ span.dated {
 /*Tablet section */
 @media only screen and (min-width: 720px) {
   header::after {
-    content: "portfolio"; } }
+    content: "PORTFOLIO";
+    top: 255px;
+    left: -65px;
+    letter-spacing: 1rem; }
+
+  figcaption {
+    left: 15%; } }
 @media only screen and (min-width: 1280px) {
   .portfolioImageContainer {
     flex-direction: row;
@@ -41,7 +47,57 @@ span.dated {
     width: 30vw; }
 
   header::after {
-    left: 30px; } }
+    left: -60px; }
+
+  figcaption {
+    left: 80px; }
+
+  .portfolioImg img {
+    height: 560px; } }
+.heroAbout {
+  background-image: url("../assets/about/mobile/image-hero.jpg");
+  background-size: cover;
+  height: 240px;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.heroAbout::after {
+  position: absolute;
+  background-color: white;
+  width: 90%;
+  height: 41px;
+  content: "";
+  bottom: 0; }
+
+main {
+  color: black; }
+
+.aboutContainer {
+  width: 311px;
+  margin: auto; }
+  .aboutContainer .team {
+    position: relative; }
+  .aboutContainer .team::after {
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    bottom: -30px;
+    content: "";
+    background-color: black; }
+  .aboutContainer h1 {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .aboutContainer p {
+    font-size: 0.95rem;
+    line-height: 1.7; }
+  .aboutContainer .heritage {
+    margin-top: 80px; }
+    .aboutContainer .heritage p {
+      margin-bottom: 20px; }
+    .aboutContainer .heritage h2 {
+      margin-bottom: 20px; }
+
 .navMenu {
   display: flex;
   align-items: center;
@@ -137,7 +193,7 @@ a {
   visibility: hidden; }
 
 .navMenu svg:first-child {
-  transform: scale(0.75); }
+  transform: scale(0.8); }
 
 /* Welcome section */
 .welcome {

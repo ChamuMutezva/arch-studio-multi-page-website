@@ -29,15 +29,15 @@ span.dated {
 }
 
 /*Tablet section */
-@media only screen and (min-width: 720px) {
-    header::after {
-      //  position: absolute;
-        content: "portfolio";
-      //  color: black;
-      //  top: 117px;
-      //  -webkit-transform: rotate(90deg);
-      //  transform: rotate(90deg);
-      //  left: 40px;
+@media only screen and (min-width: 720px) {   
+    header::after {     
+        content: "PORTFOLIO";
+        top: 255px;
+    left: -65px;
+    letter-spacing: 1rem;      
+    }
+    figcaption {       
+        left: 15%;
     }
 
 }
@@ -53,6 +53,12 @@ span.dated {
         width: 30vw;
     }
     header::after {
-        left: 30px;
+        left: -60px;
+    }
+    figcaption {       
+        left: 80px;
+    }
+    .portfolioImg img {   
+    height: 560px;
     }
 }

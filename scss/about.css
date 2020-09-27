@@ -1,1 +1,45 @@
-/* No CSS *//*# sourceMappingURL=about.css.map */
+.heroAbout {
+  background-image: url("../assets/about/mobile/image-hero.jpg");
+  background-size: cover;
+  height: 240px;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.heroAbout::after {
+  position: absolute;
+  background-color: white;
+  width: 90%;
+  height: 41px;
+  content: "";
+  bottom: 0; }
+
+main {
+  color: black; }
+
+.aboutContainer {
+  width: 311px;
+  margin: auto; }
+  .aboutContainer .team {
+    position: relative; }
+  .aboutContainer .team::after {
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    bottom: -30px;
+    content: "";
+    background-color: black; }
+  .aboutContainer h1 {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .aboutContainer p {
+    font-size: 0.95rem;
+    line-height: 1.7; }
+  .aboutContainer .heritage {
+    margin-top: 80px; }
+    .aboutContainer .heritage p {
+      margin-bottom: 20px; }
+    .aboutContainer .heritage h2 {
+      margin-bottom: 20px; }
+
+/*# sourceMappingURL=about.css.map */
