@@ -19,6 +19,17 @@ main {
 .aboutContainer {
     width: 311px;
     margin: auto;
+
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
     .team {
         position: relative;
     }
@@ -30,15 +41,7 @@ main {
         content: "";
         background-color: black;
     }
-    h1 {
-        font-size: 2.5rem;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-    p {
-        font-size: 0.95rem;
-        line-height: 1.7;
-    }
+   
     .heritage {
         margin-top: 80px;
         p {
@@ -48,4 +51,29 @@ main {
             margin-bottom: 20px;
         }
     }
+
+    .leaderList {
+        margin-bottom: 40px;
+        .details {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        picture img {
+            display: block;
+            width: 100%;
+            margin: auto;
+        }
+        .social img {
+            margin-right: 20px;
+        }
+    }
+
+    .leaders h3 {
+        font-size: 3rem;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+   
 }

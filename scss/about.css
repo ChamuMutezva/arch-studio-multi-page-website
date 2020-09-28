@@ -19,6 +19,13 @@ main {
 .aboutContainer {
   width: 311px;
   margin: auto; }
+  .aboutContainer h1 {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .aboutContainer p {
+    font-size: 0.95rem;
+    line-height: 1.7; }
   .aboutContainer .team {
     position: relative; }
   .aboutContainer .team::after {
@@ -28,18 +35,28 @@ main {
     bottom: -30px;
     content: "";
     background-color: black; }
-  .aboutContainer h1 {
-    font-size: 2.5rem;
-    margin-top: 30px;
-    margin-bottom: 20px; }
-  .aboutContainer p {
-    font-size: 0.95rem;
-    line-height: 1.7; }
   .aboutContainer .heritage {
     margin-top: 80px; }
     .aboutContainer .heritage p {
       margin-bottom: 20px; }
     .aboutContainer .heritage h2 {
       margin-bottom: 20px; }
+  .aboutContainer .leaderList {
+    margin-bottom: 40px; }
+    .aboutContainer .leaderList .details {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px; }
+    .aboutContainer .leaderList picture img {
+      display: block;
+      width: 100%;
+      margin: auto; }
+    .aboutContainer .leaderList .social img {
+      margin-right: 20px; }
+  .aboutContainer .leaders h3 {
+    font-size: 3rem;
+    margin-top: 45px;
+    margin-bottom: 45px; }
 
 /*# sourceMappingURL=about.css.map */
