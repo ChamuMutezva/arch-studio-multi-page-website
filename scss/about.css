@@ -1,62 +1,114 @@
-.heroAbout {
+p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+header .heroAbout {
   background-image: url("../assets/about/mobile/image-hero.jpg");
   background-size: cover;
   height: 240px;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+}
 
-.heroAbout::after {
+header .heroAbout::after {
   position: absolute;
   background-color: white;
   width: 90%;
   height: 41px;
   content: "";
-  bottom: 0; }
+  bottom: 0;
+}
 
-main {
-  color: black; }
+header .team {
+  position: relative;
+  color: black;
+  text-align: left;
+  margin: auto;
+  width: 311px;
+}
+
+header .team::after {
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  bottom: -30px;
+  content: "";
+  background-color: black;
+}
 
 .aboutContainer {
   width: 311px;
-  margin: auto; }
-  .aboutContainer h1 {
-    font-size: 2.5rem;
-    margin-top: 30px;
-    margin-bottom: 20px; }
-  .aboutContainer p {
-    font-size: 0.95rem;
-    line-height: 1.7; }
-  .aboutContainer .team {
-    position: relative; }
-  .aboutContainer .team::after {
-    position: absolute;
-    width: 80px;
-    height: 2px;
-    bottom: -30px;
-    content: "";
-    background-color: black; }
-  .aboutContainer .heritage {
-    margin-top: 80px; }
-    .aboutContainer .heritage p {
-      margin-bottom: 20px; }
-    .aboutContainer .heritage h2 {
-      margin-bottom: 20px; }
-  .aboutContainer .leaderList {
-    margin-bottom: 40px; }
-    .aboutContainer .leaderList .details {
-      margin-top: 25px;
-      display: flex;
-      flex-direction: column;
-      row-gap: 10px; }
-    .aboutContainer .leaderList picture img {
-      display: block;
-      width: 100%;
-      margin: auto; }
-    .aboutContainer .leaderList .social img {
-      margin-right: 20px; }
-  .aboutContainer .leaders h3 {
-    font-size: 3rem;
-    margin-top: 45px;
-    margin-bottom: 45px; }
+  margin: auto;
+  color: black;
+}
 
+.aboutContainer .heritage {
+  margin-top: 80px;
+}
+
+.aboutContainer .heritage p {
+  margin-bottom: 20px;
+}
+
+.aboutContainer .heritage h2 {
+  margin-bottom: 20px;
+}
+
+.aboutContainer .leaderList {
+  margin-bottom: 40px;
+}
+
+.aboutContainer .leaderList .details {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+
+.aboutContainer .leaderList picture img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.aboutContainer .leaderList .social img {
+  margin-right: 20px;
+}
+
+.aboutContainer .leaders h3 {
+  font-size: 3rem;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+/*Tablet section */
+@media only screen and (min-width: 720px) {
+  header::after {
+    top: 152px;
+    left: 3px;
+  }
+  .heroAbout {
+    background-image: url(../assets/about/tablet/image-hero.jpg);
+    width: 573px;
+    margin: auto;
+    height: 720px;
+  }
+  .heroAbout::after {
+    height: 410px;
+    bottom: 0;
+    right: 0;
+  }
+}
 /*# sourceMappingURL=about.css.map */

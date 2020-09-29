@@ -1,3 +1,14 @@
+    p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    } 
+     
+header {
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 .heroAbout {
     background-image: url("../assets/about/mobile/image-hero.jpg");
     background-size: cover;
@@ -13,34 +24,29 @@ position: relative;
     content: "";
     bottom: 0;
 }
-main {
+.team {
+    position: relative;
     color: black;
+    text-align: left;
+    margin: auto;
+    width: 311px;
 }
+.team::after {
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    bottom: -30px;
+    content: "";
+    background-color: black;
+}
+
+}
+
 .aboutContainer {
     width: 311px;
     margin: auto;
-
-    h1 {
-        font-size: 2.5rem;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-    p {
-        font-size: 0.95rem;
-        line-height: 1.7;
-    }
-
-    .team {
-        position: relative;
-    }
-    .team::after {
-        position: absolute;
-        width: 80px;
-        height: 2px;
-        bottom: -30px;
-        content: "";
-        background-color: black;
-    }
+    color: black;
+  
    
     .heritage {
         margin-top: 80px;
@@ -77,3 +83,24 @@ main {
     }
    
 }
+
+
+/*Tablet section */
+    @media only screen and (min-width: 720px) { 
+        header::after {           
+            top: 152px;            
+            left: 3px;
+        }
+        .heroAbout {
+            background-image: url(../assets/about/tablet/image-hero.jpg);   
+            width: 573px;
+             margin: auto;
+             height: 720px;                 
+        }
+        .heroAbout::after {               
+            height: 410px;               
+            bottom: 0;
+            right: 0;
+        }     
+
+      }
