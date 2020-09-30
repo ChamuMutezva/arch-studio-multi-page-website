@@ -96,8 +96,9 @@ header .team::after {
 /*Tablet section */
 @media only screen and (min-width: 720px) {
   header::after {
-    top: 152px;
-    left: 3px;
+    top: 205px;
+    left: -48px;
+    content: "ABOUT US";
   }
   .team::before {
     position: absolute;
@@ -130,8 +131,41 @@ header .team::after {
     bottom: 0;
     right: 0;
   }
+  header .heroAbout::before {
+    content: "About";
+    position: absolute;
+    top: 36%;
+    font-size: 5rem;
+    color: #EEEFF4;
+    z-index: 1;
+    left: 50%;
+    font-weight: 900;
+  }
   header .teamHeroContainer {
     position: relative;
+  }
+  main {
+    top: -110px;
+    margin-bottom: -110px;
+  }
+  main .aboutContainer {
+    width: 574px;
+  }
+  main p {
+    font-size: 0.9rem;
+  }
+  main .leaderBoard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .leaderList {
+    width: 280px;
   }
 }
 /*# sourceMappingURL=about.css.map */
