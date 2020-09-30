@@ -91,6 +91,34 @@ position: relative;
             top: 152px;            
             left: 3px;
         }
+        .team::before {
+            position: absolute;
+            width: 80px;
+            height: 2px;
+            top: -80px;
+            content: "";
+            background-color: black;
+        }
+       
+
+
+        header {
+            
+            .team::after {
+                left: -88px; 
+                bottom: -100px;          
+            }  
+
+          .team {               
+                width: 572px;
+                left: 90px;
+                top: -256px;
+                p {
+                    width: 82%;                    
+                }             
+
+            }
+
         .heroAbout {
             background-image: url(../assets/about/tablet/image-hero.jpg);   
             width: 573px;
@@ -101,6 +129,14 @@ position: relative;
             height: 410px;               
             bottom: 0;
             right: 0;
-        }     
+        }  
+
+
+        .teamHeroContainer {
+            position: relative;
+        }
+
+
+    }   
 
       }

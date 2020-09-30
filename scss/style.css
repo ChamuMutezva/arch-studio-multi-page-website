@@ -82,7 +82,18 @@ span.dated {
   }
 }
 
-.heroAbout {
+p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+header .heroAbout {
   background-image: url("../assets/about/mobile/image-hero.jpg");
   background-size: cover;
   height: 240px;
@@ -90,7 +101,7 @@ span.dated {
   position: relative;
 }
 
-.heroAbout::after {
+header .heroAbout::after {
   position: absolute;
   background-color: white;
   width: 90%;
@@ -99,34 +110,27 @@ span.dated {
   bottom: 0;
 }
 
-.aboutContainer {
-  width: 311px;
-  margin: auto;
-  color: black;
-}
-
-.aboutContainer h1 {
-  font-size: 2.5rem;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.aboutContainer p {
-  font-size: 0.95rem;
-  line-height: 1.7;
-}
-
-.aboutContainer .team {
+header .team {
   position: relative;
+  color: black;
+  text-align: left;
+  margin: auto;
+  width: 311px;
 }
 
-.aboutContainer .team::after {
+header .team::after {
   position: absolute;
   width: 80px;
   height: 2px;
   bottom: -30px;
   content: "";
   background-color: black;
+}
+
+.aboutContainer {
+  width: 311px;
+  margin: auto;
+  color: black;
 }
 
 .aboutContainer .heritage {
@@ -171,6 +175,25 @@ span.dated {
   font-size: 3rem;
   margin-top: 45px;
   margin-bottom: 45px;
+}
+
+/*Tablet section */
+@media only screen and (min-width: 720px) {
+  header::after {
+    top: 152px;
+    left: 3px;
+  }
+  .heroAbout {
+    background-image: url(../assets/about/tablet/image-hero.jpg);
+    width: 573px;
+    margin: auto;
+    height: 720px;
+  }
+  .heroAbout::after {
+    height: 410px;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .navMenu {
