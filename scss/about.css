@@ -83,6 +83,17 @@ header .team {
   margin-right: 20px;
 }
 
+.aboutContainer .leaderList .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 18px;
+          column-gap: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .aboutContainer .leaders h3 {
   font-size: 3rem;
   margin-top: 45px;
@@ -169,9 +180,6 @@ header .team {
     width: 280px;
   }
   main .leaders {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding-top: 75px;
   }
 }
@@ -201,6 +209,9 @@ header .team {
     top: 242px;
   }
   main .leaders {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -230,12 +241,23 @@ header .team {
   main .leaderList {
     width: 350px;
   }
+  main .leaderList .details {
+    position: relative;
+  }
   main .leaderBoard {
     width: 730px;
   }
   main .social {
     visibility: hidden;
     position: absolute;
+    top: -219px;
+    left: 128px;
+  }
+  main .social svg path {
+    fill: white;
+  }
+  main .profileImg:hover + .details .social {
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=about.css.map */

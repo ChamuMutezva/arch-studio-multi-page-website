@@ -35,7 +35,7 @@
             width: 311px;
         }
 
-        
+
     }
 
     .aboutContainer {
@@ -45,11 +45,12 @@
 
         .heritageImgContainer {
             display: none;
-        }      
+        }
 
         .heritage {
             margin-top: 80px;
             position: relative;
+
             p {
                 margin-bottom: 20px;
             }
@@ -77,6 +78,11 @@
 
             .social img {
                 margin-right: 20px;
+            }
+            .social {
+                display: flex;
+                column-gap: 18px;
+                align-items: center;
             }
         }
 
@@ -106,7 +112,7 @@
             background-color: black;
         }
 
-        header {          
+        header {
 
             .team {
                 width: 572px;
@@ -154,10 +160,11 @@
 
             .aboutContainer {
                 width: 574px;
+
                 .heritage::before {
                     position: absolute;
                     width: 80px;
-                    height: 2px;                   
+                    height: 2px;
                     content: "";
                     background-color: black;
                     left: 0px;
@@ -178,8 +185,8 @@
             .leaderList {
                 width: 280px;
             }
-            .leaders {
-                display: flex;
+
+            .leaders {               
                 padding-top: 75px;
             }
         }
@@ -219,8 +226,10 @@
 
         main {
             .leaders {
+                display: flex;
                 justify-content: space-between;
             }
+
             .aboutContainer {
                 width: 77%;
                 padding-top: 200px;
@@ -233,24 +242,42 @@
                     display: flex;
                     justify-content: space-between;
                 }
+
                 .heritageDetails {
                     padding-top: 85px;
                     width: 37%;
                 }
-                .leaders h3 {                    
+
+                .leaders h3 {
                     width: 25%;
                 }
             }
+
             .leaderList {
                 width: 350px;
+
+                .details {
+                    position: relative;
+                }
             }
+
             .leaderBoard {
                 width: 730px;
             }
+
             .social {
                 visibility: hidden;
                 position: absolute;
+                top: -219px;
+                left: 128px;
             }
+            .social svg path {
+                fill: white;
+            }
+            .profileImg:hover + .details .social {
+                visibility: visible;
+            }
+           
         }
 
     }
