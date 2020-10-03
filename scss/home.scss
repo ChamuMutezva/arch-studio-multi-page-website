@@ -234,23 +234,27 @@ li:hover {
 
 /*Tablet section */
 @media only screen and (min-width: 720px) {
+    main {
+        top: 0px;
+        margin-bottom: 0px;
+    }
 .hero {
     width: 573px;
     margin: auto;
     background-image: url(../assets/home/tablet/image-hero-paramour.jpg);
 }
 .modal {
-    width: 80%;
-    top: 0;
+    width: 100%;
+    top: 0px;
     visibility: visible;
-    padding-top: 32px;
+    padding-top: 5px;
     padding-bottom: 32px;
     background: inherit;
  }
 .modal ul {
     display: flex;
-    justify-content: space-evenly;
-    width: 58%;
+    justify-content: space-around;
+    width: 85%;
     margin: auto 60px;
 }
 .modal li {    
@@ -260,8 +264,9 @@ li:hover {
     visibility: hidden;
 }
 nav {
+    position: relative;
     width: 59%;
-    margin: auto;
+    margin: 56px auto;
 }
 .navMenu {
     margin-left: -45px;
@@ -286,11 +291,11 @@ header::before {
 }
 header::after {  
     position: absolute;
-    content: "home";      
+    content: "HOME";      
     color: black;
-    top: 117px;
+    top: 200px;
     transform: rotate(90deg);
-    left: 40px;
+    left: 7px;
 }
 .welcomeContainer {
     width: 573px;   
