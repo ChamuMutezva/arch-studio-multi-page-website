@@ -1,97 +1,102 @@
     p {
         font-size: 0.95rem;
         line-height: 1.7;
-    } 
-     
-header {
-    h1 {
-        font-size: 2.5rem;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-.heroAbout {
-    background-image: url("../assets/about/mobile/image-hero.jpg");
-    background-size: cover;
-    height: 240px;
-background-repeat: no-repeat;
-position: relative;
-}
-.heroAbout::after {
-    position: absolute;
-    background-color: white;
-    width: 90%;
-    height: 41px;
-    content: "";
-    bottom: 0;
-}
-.team {
-    position: relative;
-    color: black;
-    text-align: left;
-    margin: auto;
-    width: 311px;
-}
-.team::after {
-    position: absolute;
-    width: 80px;
-    height: 2px;
-    bottom: -30px;
-    content: "";
-    background-color: black;
-}
-
-}
-
-.aboutContainer {
-    width: 311px;
-    margin: auto;
-    color: black;
-  
-   
-    .heritage {
-        margin-top: 80px;
-        p {
-            margin-bottom: 20px;
-        }
-        h2 {
-            margin-bottom: 20px;
-        }
     }
 
-    .leaderList {
-        margin-bottom: 40px;
-        .details {
-            margin-top: 25px;
-            display: flex;
-            flex-direction: column;
-            row-gap: 10px;
+    header {
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
         }
-        picture img {
-            display: block;
-            width: 100%;
+
+        .heroAbout {
+            background-image: url("../assets/about/mobile/image-hero.jpg");
+            background-size: cover;
+            height: 240px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .heroAbout::after {
+            position: absolute;
+            background-color: white;
+            width: 90%;
+            height: 41px;
+            content: "";
+            bottom: 0;
+        }
+
+        .team {
+            position: relative;
+            color: black;
+            text-align: left;
             margin: auto;
+            width: 311px;
         }
-        .social img {
-            margin-right: 20px;
-        }
+
+        
     }
 
-    .leaders h3 {
-        font-size: 3rem;
-        margin-top: 45px;
-        margin-bottom: 45px;
+    .aboutContainer {
+        width: 311px;
+        margin: auto;
+        color: black;
+
+        .heritageImgContainer {
+            display: none;
+        }      
+
+        .heritage {
+            margin-top: 80px;
+            position: relative;
+            p {
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+
+        .leaderList {
+            margin-bottom: 40px;
+
+            .details {
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+            }
+
+            picture img {
+                display: block;
+                width: 100%;
+                margin: auto;
+            }
+
+            .social img {
+                margin-right: 20px;
+            }
+        }
+
+        .leaders h3 {
+            font-size: 3rem;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+
     }
-   
-}
 
 
-/*Tablet section */
-    @media only screen and (min-width: 720px) { 
-        header::after {           
-            top: 205px;            
+    /*Tablet section */
+    @media only screen and (min-width: 720px) {
+        header::after {
+            top: 205px;
             left: -48px;
             content: "ABOUT US"
         }
+
         .team::before {
             position: absolute;
             width: 80px;
@@ -100,72 +105,152 @@ position: relative;
             content: "";
             background-color: black;
         }
-       
 
+        header {          
 
-        header {
-            
-            .team::after {
-                left: -88px; 
-                bottom: -100px;          
-            }  
-
-          .team {               
+            .team {
                 width: 572px;
                 left: 90px;
                 top: -256px;
+
                 p {
-                    width: 82%;                    
-                }             
+                    width: 82%;
+                }
 
             }
 
-        .heroAbout {
-            background-image: url(../assets/about/tablet/image-hero.jpg);   
-            width: 573px;
-             margin: auto;
-             height: 720px;                 
-        }
-        .heroAbout::after {               
-            height: 410px;               
-            bottom: 0;
-            right: 0;
-        } 
-        .heroAbout::before {
-            content: "About";
-            position: absolute;
-            top: 36%;
-            font-size: 5rem;
-            color: #EEEFF4;
-            z-index: 1;
-            left: 50%;
-            font-weight: 900;
-        } 
+            .heroAbout {
+                background-image: url(../assets/about/tablet/image-hero.jpg);
+                width: 573px;
+                margin: auto;
+                height: 720px;
+            }
 
-        .teamHeroContainer {
-            position: relative;
-        }
-    }   
+            .heroAbout::after {
+                height: 410px;
+                bottom: 0;
+                right: 0;
+            }
 
-    main {       
-        top: -110px;
-        margin-bottom: -110px;
-        .aboutContainer {
-            width: 574px;       
+            .heroAbout::before {
+                content: "About";
+                position: absolute;
+                top: 36%;
+                font-size: 5rem;
+                color: #EEEFF4;
+                z-index: 1;
+                left: 50%;
+                font-weight: 900;
+            }
+
+            .teamHeroContainer {
+                position: relative;
+            }
         }
-        p {
-            font-size: 0.9rem;           
+
+        main {
+            top: -110px;
+            margin-bottom: -110px;
+
+            .aboutContainer {
+                width: 574px;
+                .heritage::before {
+                    position: absolute;
+                    width: 80px;
+                    height: 2px;                   
+                    content: "";
+                    background-color: black;
+                    left: 0px;
+                    top: -80px;
+                }
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .leaderBoard {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .leaderList {
+                width: 280px;
+            }
+            .leaders {
+                display: flex;
+                padding-top: 75px;
+            }
         }
-        .leaderBoard {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .leaderList {
-            width: 280px;
-        }
+
+
     }
-   
 
 
-      }
+    @media only screen and (min-width: 1280px) {
+
+        header {
+            .teamHeroContainer {
+                display: flex;
+                width: 80%;
+                margin: auto 150px;
+            }
+
+            .heroAbout::after {
+                left: 78%;
+                height: 520px;
+                bottom: -2px;
+                right: 0;
+            }
+
+            .heroAbout::before {
+                font-size: 10rem;
+                left: 78%;
+                top: 16%;
+            }
+
+            .team {
+                width: 572px;
+                left: -10px;
+                top: 242px;
+            }
+        }
+
+        main {
+            .leaders {
+                justify-content: space-between;
+            }
+            .aboutContainer {
+                width: 77%;
+                padding-top: 200px;
+
+                .heritageImgContainer {
+                    display: block;
+                }
+
+                .heritage {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .heritageDetails {
+                    padding-top: 85px;
+                    width: 37%;
+                }
+                .leaders h3 {                    
+                    width: 25%;
+                }
+            }
+            .leaderList {
+                width: 350px;
+            }
+            .leaderBoard {
+                width: 730px;
+            }
+            .social {
+                visibility: hidden;
+                position: absolute;
+            }
+        }
+
+    }

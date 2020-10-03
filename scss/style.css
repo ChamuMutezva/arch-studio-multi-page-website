@@ -86,6 +86,10 @@ span.dated {
   }
 }
 
+header .heroAbout {
+  background-image: url(../assets/contact/mobile/image-hero.jpg);
+}
+
 p {
   font-size: 0.95rem;
   line-height: 1.7;
@@ -122,23 +126,19 @@ header .team {
   width: 311px;
 }
 
-header .team::after {
-  position: absolute;
-  width: 80px;
-  height: 2px;
-  bottom: -30px;
-  content: "";
-  background-color: black;
-}
-
 .aboutContainer {
   width: 311px;
   margin: auto;
   color: black;
 }
 
+.aboutContainer .heritageImgContainer {
+  display: none;
+}
+
 .aboutContainer .heritage {
   margin-top: 80px;
+  position: relative;
 }
 
 .aboutContainer .heritage p {
@@ -196,10 +196,6 @@ header .team::after {
     content: "";
     background-color: black;
   }
-  header .team::after {
-    left: -88px;
-    bottom: -100px;
-  }
   header .team {
     width: 572px;
     left: 90px;
@@ -239,6 +235,15 @@ header .team::after {
   main .aboutContainer {
     width: 574px;
   }
+  main .aboutContainer .heritage::before {
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    content: "";
+    background-color: black;
+    left: -88px;
+    bottom: -100px;
+  }
   main p {
     font-size: 0.9rem;
   }
@@ -254,6 +259,51 @@ header .team::after {
   }
   main .leaderList {
     width: 280px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  header .teamHeroContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: auto 150px;
+  }
+  header .heroAbout::after {
+    left: 78%;
+    height: 520px;
+    bottom: -2px;
+    right: 0;
+  }
+  header .heroAbout::before {
+    font-size: 10rem;
+    left: 78%;
+    top: 16%;
+  }
+  header .team {
+    width: 572px;
+    left: -10px;
+    top: 242px;
+  }
+  main .aboutContainer {
+    width: 77%;
+    padding-top: 200px;
+  }
+  main .aboutContainer .heritageImgContainer {
+    display: block;
+  }
+  main .aboutContainer .heritage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .aboutContainer .heritageDetails {
+    padding-top: 85px;
+    width: 37%;
   }
 }
 
@@ -805,7 +855,7 @@ li:hover {
     left: 40px;
   }
   header::after {
-    left: 44px;
+    left: 20px;
   }
   .navMenu {
     margin-left: -86px;
