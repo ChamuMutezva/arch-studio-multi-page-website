@@ -20,4 +20,80 @@ main address.office1 {
 main .office1 h3, main .office2 h3 {
   margin-bottom: 20px;
 }
+
+.mainContainer {
+  width: 100%;
+}
+
+.mainContainer .primaryContainer .offices {
+  width: 311px;
+  margin: auto;
+}
+
+.mainContainer div#map {
+  margin-top: 50px;
+}
+
+.mainContainer .offices a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.mainContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 60px;
+  padding-top: 30px;
+}
+
+.mainContainer .contactUs {
+  width: 311px;
+  margin: 63px auto 0;
+}
+
+.mainContainer input[type="text"], .mainContainer input[type="email"], .mainContainer textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 15px 25px;
+}
+
+.mainContainer label.contactDetails {
+  position: relative;
+}
+
+.mainContainer label.contactDetails span.contactMe {
+  position: absolute;
+  visibility: hidden;
+}
+
+.mainContainer .submitDetails {
+  background: #1b1d23;
+  color: white;
+  width: 50px;
+  padding: 12px;
+  position: absolute;
+  bottom: -44px;
+  right: 60px;
+}
+
+.mainContainer .submitDetails img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+/*Tablet section */
+@media only screen and (min-width: 720px) {
+  .mainContainer .primaryContainer .offices {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=contact.css.map */
