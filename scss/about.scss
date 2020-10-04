@@ -38,16 +38,16 @@
 
     }
 
-    .aboutContainer {
+    .mainContainer {
         width: 311px;
         margin: auto;
         color: black;
 
-        .heritageImgContainer {
+        .primaryContainerImgContainer {
             display: none;
         }
 
-        .heritage {
+        .primaryContainer {
             margin-top: 80px;
             position: relative;
 
@@ -158,10 +158,10 @@
             top: -110px;
             margin-bottom: -110px;
 
-            .aboutContainer {
+            .mainContainer {
                 width: 574px;
 
-                .heritage::before {
+                .primaryContainer::before {
                     position: absolute;
                     width: 80px;
                     height: 2px;
@@ -230,20 +230,20 @@
                 justify-content: space-between;
             }
 
-            .aboutContainer {
+            .mainContainer {
                 width: 77%;
                 padding-top: 200px;
 
-                .heritageImgContainer {
+                .primaryContainerImgContainer {
                     display: block;
                 }
 
-                .heritage {
+                .primaryContainer {
                     display: flex;
                     justify-content: space-between;
                 }
 
-                .heritageDetails {
+                .primaryContainerDetails {
                     padding-top: 85px;
                     width: 37%;
                 }

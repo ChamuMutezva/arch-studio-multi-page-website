@@ -126,34 +126,34 @@ header .team {
   width: 311px;
 }
 
-.aboutContainer {
+.mainContainer {
   width: 311px;
   margin: auto;
   color: black;
 }
 
-.aboutContainer .heritageImgContainer {
+.mainContainer .primaryContainerImgContainer {
   display: none;
 }
 
-.aboutContainer .heritage {
+.mainContainer .primaryContainer {
   margin-top: 80px;
   position: relative;
 }
 
-.aboutContainer .heritage p {
+.mainContainer .primaryContainer p {
   margin-bottom: 20px;
 }
 
-.aboutContainer .heritage h2 {
+.mainContainer .primaryContainer h2 {
   margin-bottom: 20px;
 }
 
-.aboutContainer .leaderList {
+.mainContainer .leaderList {
   margin-bottom: 40px;
 }
 
-.aboutContainer .leaderList .details {
+.mainContainer .leaderList .details {
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,17 +165,28 @@ header .team {
   row-gap: 10px;
 }
 
-.aboutContainer .leaderList picture img {
+.mainContainer .leaderList picture img {
   display: block;
   width: 100%;
   margin: auto;
 }
 
-.aboutContainer .leaderList .social img {
+.mainContainer .leaderList .social img {
   margin-right: 20px;
 }
 
-.aboutContainer .leaders h3 {
+.mainContainer .leaderList .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 18px;
+          column-gap: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .leaders h3 {
   font-size: 3rem;
   margin-top: 45px;
   margin-bottom: 45px;
@@ -232,17 +243,17 @@ header .team {
     top: -110px;
     margin-bottom: -110px;
   }
-  main .aboutContainer {
+  main .mainContainer {
     width: 574px;
   }
-  main .aboutContainer .heritage::before {
+  main .mainContainer .primaryContainer::before {
     position: absolute;
     width: 80px;
     height: 2px;
     content: "";
     background-color: black;
-    left: -88px;
-    bottom: -100px;
+    left: 0px;
+    top: -80px;
   }
   main p {
     font-size: 0.9rem;
@@ -259,6 +270,9 @@ header .team {
   }
   main .leaderList {
     width: 280px;
+  }
+  main .leaders {
+    padding-top: 75px;
   }
 }
 
@@ -286,14 +300,7 @@ header .team {
     left: -10px;
     top: 242px;
   }
-  main .aboutContainer {
-    width: 77%;
-    padding-top: 200px;
-  }
-  main .aboutContainer .heritageImgContainer {
-    display: block;
-  }
-  main .aboutContainer .heritage {
+  main .leaders {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -301,9 +308,48 @@ header .team {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  main .aboutContainer .heritageDetails {
+  main .mainContainer {
+    width: 77%;
+    padding-top: 200px;
+  }
+  main .mainContainer .primaryContainerImgContainer {
+    display: block;
+  }
+  main .mainContainer .primaryContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .mainContainer .primaryContainerDetails {
     padding-top: 85px;
     width: 37%;
+  }
+  main .mainContainer .leaders h3 {
+    width: 25%;
+  }
+  main .leaderList {
+    width: 350px;
+  }
+  main .leaderList .details {
+    position: relative;
+  }
+  main .leaderBoard {
+    width: 730px;
+  }
+  main .social {
+    visibility: hidden;
+    position: absolute;
+    top: -219px;
+    left: 128px;
+  }
+  main .social svg path {
+    fill: white;
+  }
+  main .profileImg:hover + .details .social {
+    visibility: visible;
   }
 }
 

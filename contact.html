@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="./scss/contact.css">
   <title>Frontend Mentor | Arch Studio Website Challenge</title>
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
 </head>
 
 <body>
@@ -72,13 +75,37 @@
   </header>
 
   <main>
-    <div class="contactContainer">
+    <div class="mainContainer">
       <!--contact section-->
-      <div class="contact">
-        <h2>Contact Details/h2>
-        
+      <div class="primaryContainer">
+        <div class="offices">
+          <h2>Contact Details</h2>
+          <address class="office1">
+            <h3>Main Office</h3>
+            <p>Mail: archone@mail.com</p>
+            <p>Address: 1892 Chenoweth Drive TN</p>
+            <p>Phone: 123-456-3451</p>
+            <a href=""><span> View on Map</span>
+              <img src="./assets/icons/icon-arrow.svg" alt="" srcset="">
+            </a>
+          </address>
+
+          <address class="office2">
+            <h3> Office II</h3>
+            <p> Mail: archtwo@mail.com</p>
+            <p>Address: 3399 Wines Lane TX</p>
+            <p>Phone: 832-123-4321</p>
+            <a href=""><span> View on Map</span>
+              <img src="./assets/icons/icon-arrow.svg" alt="" srcset="">
+            </a>
+
+          </address>
+        </div>
+        <div id='map' style='width: 400px; height: 300px;'></div>
+
+
       </div>
-      
+
     </div>
   </main>
 
@@ -90,25 +117,7 @@
 
   Contact
 
- 
 
- 
-
- 
-
-  Main Office
-  Mail: archone@mail.com
-  Address: 1892 Chenoweth Drive TN
-  Phone: 123-456-3451
-
-  View on Map
-
-  Office II
-  Mail: archtwo@mail.com
-  Address: 3399 Wines Lane TX
-  Phone: 832-123-4321
-
-  View on Map
 
   Connect with us
 
@@ -156,7 +165,14 @@
 
   </footer>
   <script src="main.js"></script>
-
+  <script>
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoiMTAwMTIxODgwMiIsImEiOiJjam1lZHppNDIwY3JuM3BwZjM3ZnNmZDJ2In0.5BIcQy3_ACs0afqvHmPbVg';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11'
+    });
+  </script>
 </body>
 
 </html>
