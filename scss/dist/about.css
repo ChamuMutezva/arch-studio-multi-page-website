@@ -112,6 +112,7 @@ header .team {
     height: 410px;
     bottom: 0;
     right: 0;
+    outline: auto;
   }
   header .heroAbout::before {
     content: "About";
@@ -194,6 +195,7 @@ header .team {
   }
   main .mainContainer .primaryContainer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   main .mainContainer .primaryContainerDetails {

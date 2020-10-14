@@ -136,6 +136,7 @@
                 height: 410px;
                 bottom: 0;
                 right: 0;
+                outline: auto;
             }
 
             .heroAbout::before {
@@ -240,6 +241,7 @@
 
                 .primaryContainer {
                     display: flex;
+                    flex-direction: row;
                     justify-content: space-between;
                 }
 

@@ -15,7 +15,8 @@ main address.office1 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-main .office1 h3, main .office2 h3 {
+main .office1 h3,
+main .office2 h3 {
   margin-bottom: 20px;
 }
 
@@ -27,7 +28,10 @@ main .office1 h3, main .office2 h3 {
   margin: auto;
 }
 .mainContainer div#map {
+  margin: auto;
   margin-top: 50px;
+  width: 400px;
+  height: 300px;
 }
 .mainContainer .offices a {
   display: flex;
@@ -43,7 +47,9 @@ main .office1 h3, main .office2 h3 {
   width: 311px;
   margin: 63px auto 0;
 }
-.mainContainer input[type=text], .mainContainer input[type=email], .mainContainer textarea {
+.mainContainer input[type=text],
+.mainContainer input[type=email],
+.mainContainer textarea {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -71,7 +77,52 @@ main .office1 h3, main .office2 h3 {
 
 /*Tablet section */
 @media only screen and (min-width: 720px) {
+  header .heroAbout::before {
+    content: "Contact";
+  }
+
   .mainContainer .primaryContainer .offices {
+    width: 100%;
+  }
+  .mainContainer address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainContainer div#map {
+    margin: auto;
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  main .mainContainer .primaryContainer {
+    flex-direction: column;
+  }
+  main .mainContainer .contactUs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  main .offices {
+    display: flex;
+  }
+  main .offices h2 {
+    width: 30%;
+  }
+  main .officeList {
+    display: flex;
+    width: 100%;
+  }
+  main address.office1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  main address.office2 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 }
