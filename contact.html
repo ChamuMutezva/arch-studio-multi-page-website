@@ -108,7 +108,8 @@
             </address>
           </div>
         </div>
-        <div id='map' ></div><!--style='width: 400px; height: 300px;'-->
+        <div id='map'></div>
+        <!--style='width: 400px; height: 300px;'-->
         <div class="contactUs">
           <h3>Connect with us</h3>
           <form>
@@ -134,8 +135,8 @@
       </div>
 
     </div>
-  </main> 
-  
+  </main>
+
   <footer>
     <div class="footerContainer">
       <div class="footerLogo">
@@ -181,6 +182,9 @@
     });
     // Add zoom and rotation controls to the map.
     map.addControl(new mapboxgl.NavigationControl());
+    var marker = new mapboxgl.Marker()
+      .setLngLat([30.5, 50.5])
+      .addTo(map);
   </script>
 </body>
 

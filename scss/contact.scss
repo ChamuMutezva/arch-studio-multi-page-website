@@ -122,14 +122,25 @@ main {
 
 //Desktop section
 @media only screen and (min-width: 1280px) {
+    .mainContainer {
+        div#map {
+            margin: 100px auto;
+            width: 90%;
+        }
+    }
+
     main {
         .mainContainer .primaryContainer {
             flex-direction: column;
         }
-       .mainContainer .contactUs {
-            width: 100%;           
+
+        .mainContainer .contactUs {
+            width: 100%;
             display: flex;
             justify-content: space-around;
+            h3 {
+                margin-top: 50px;
+            }
         }
 
         .offices {

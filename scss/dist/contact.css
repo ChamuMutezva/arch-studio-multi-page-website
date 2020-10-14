@@ -95,6 +95,11 @@ main .office2 h3 {
   }
 }
 @media only screen and (min-width: 1280px) {
+  .mainContainer div#map {
+    margin: 100px auto;
+    width: 90%;
+  }
+
   main .mainContainer .primaryContainer {
     flex-direction: column;
   }
@@ -102,6 +107,9 @@ main .office2 h3 {
     width: 100%;
     display: flex;
     justify-content: space-around;
+  }
+  main .mainContainer .contactUs h3 {
+    margin-top: 50px;
   }
   main .offices {
     display: flex;
