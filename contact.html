@@ -10,8 +10,20 @@
   <link rel="stylesheet" href="./scss/contact.css">
   <title>Frontend Mentor | Arch Studio Website Challenge</title>
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
-  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <!--Mapbox-->
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'>
+  </script>
+  <link rel='stylesheet'
+    href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css'
+    type='text/css' />
+  eet' />
 
 </head>
 
@@ -174,17 +186,37 @@
   </footer>
   <script src="main.js"></script>
   <script>
-    mapboxgl.accessToken =
-      'pk.eyJ1IjoiMTAwMTIxODgwMiIsImEiOiJjam1lZHppNDIwY3JuM3BwZjM3ZnNmZDJ2In0.5BIcQy3_ACs0afqvHmPbVg';
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11'
-    });
-    // Add zoom and rotation controls to the map.
-    map.addControl(new mapboxgl.NavigationControl());
-    var marker = new mapboxgl.Marker()
-      .setLngLat([30.5, 50.5])
-      .addTo(map);
+    var mymap
+    async function getAddress(ipLocator) {
+      const accessToken =
+        `pk.eyJ1IjoiMTAwMTIxODgwMiIsImEiOiJjam1lZHppNDIwY3JuM3BwZjM3ZnNmZDJ2In0.5BIcQy3_ACs0afqvHmPbVg&ipAddress=${ipLocator}`
+      const apiKey = "at_XvZLm5dvyEPgWUu3SSWx0TRMNraLr"
+      const ip = await fetch(`https://geo.ipify.org/api/v1?apiKey=${apiKey}`)
+      const res = await ip.json()
+      console.log(res)
+      console.log(res.location)
+      const {
+        lat,
+        lng
+      } = res.location;
+      console.log(lat)
+      mymap = L.map('map').setView([lat, lng], 13);
+      L.marker([lat, lng]).addTo(mymap);
+      L.marker([-33.924710399999995, 25.555763199999998]).addTo(mymap);
+      mymap.panTo(new L.LatLng(-33.924710399999995, 25.555763199999998));
+
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: accessToken
+
+      }).addTo(mymap);
+
+    }
+    getAddress()
   </script>
 </body>
 
