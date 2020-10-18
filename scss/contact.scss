@@ -50,7 +50,7 @@ main {
     form {
         display: flex;
         flex-direction: column;
-        row-gap: 60px;
+        row-gap: 25px;
         padding-top: 30px;
     }
 
@@ -66,6 +66,7 @@ main {
         border-left: none;
         border-right: none;
         padding: 15px 25px;
+        resize: none; //remove the resize marks on the bottom right of textarea
     }
 
     label.contactDetails {
@@ -127,6 +128,14 @@ main {
             margin: 100px auto;
             width: 90%;
         }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+           width: 100%;
+        }
+        .submitDetails {            
+            right: 0px;
+        }
     }
 
     main {
@@ -137,9 +146,11 @@ main {
         .mainContainer .contactUs {
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             h3 {
                 margin-top: 50px;
+                font-size: 3rem;
+                width: 28%;
             }
         }
 
@@ -168,6 +179,9 @@ main {
             display: flex;
             flex-direction: column;
             width: 100%;
+        }
+        form {
+            width: 50%;
         }
 
     }

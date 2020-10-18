@@ -210,6 +210,10 @@ main .office2 h3 {
 }
 
 @media only screen and (min-width: 1280px) {
+  .mainContainer div#map {
+    margin: 100px auto;
+    width: 90%;
+  }
   main .mainContainer .primaryContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -223,6 +227,11 @@ main .office2 h3 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  main .mainContainer .contactUs h3 {
+    margin-top: 50px;
+    font-size: 3rem;
+    width: 28%;
   }
   main .offices {
     display: -webkit-box;
