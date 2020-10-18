@@ -123,8 +123,9 @@ main .office2 h3 {
             align-items: center;
   }
   .mainContainer div#map {
+    width: 100%;
+    height: 560px;
     margin: auto;
-    width: 90%;
   }
 }
 
