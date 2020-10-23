@@ -53,6 +53,7 @@ main {
     }
 
     form {
+        position: relative;
         display: flex;
         flex-direction: column;
         row-gap: 25px;
@@ -91,7 +92,7 @@ main {
         padding: 12px;
         position: absolute;
         bottom: -44px;
-        right: 45px;
+        right: 0;
 
         img {
             filter: invert(1);
